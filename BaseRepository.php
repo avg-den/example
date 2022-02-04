@@ -4,7 +4,7 @@
 namespace App\Rapture\Repositories;
 
 use App\Rapture\Database\Selectable;
-use App\Rapture\Files\c;
+use App\Rapture\Files\FilesGenerator;
 use App\Rapture\Sync\SyncGenerator;
 use App\Rapture\Tools\Tools;
 
