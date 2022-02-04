@@ -15,7 +15,7 @@ use App\Rapture\Tools\Tools;
  */
 abstract class BaseRepository extends Selectable
 {
-    protected SyncGenerator $SYNC;
+    protected FilesGenerator $SYNC;
     protected SyncGenerator $FILES;
     protected Tools $TOOLS;
 
@@ -23,8 +23,8 @@ abstract class BaseRepository extends Selectable
     public function __construct()
     {
           parent::__construct();
-//        $this->SYNC  = inj(FilesGenerator::class);
-//        $this->FILES = inj(SyncGenerator::class);
-//        $this->TOOLS = inj(Tools::class);
+        $this->SYNC  = inj(FilesGenerator::class);
+        $this->FILES = inj(SyncGenerator::class);
+        $this->TOOLS = inj(Tools::class);
     }
 }
